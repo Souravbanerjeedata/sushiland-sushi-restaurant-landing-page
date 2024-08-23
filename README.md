@@ -1,4 +1,4 @@
-## Sushiland
+## SushiLand
 ### A sushi restaurant landing page.
 It has been created using:
 - Vite
