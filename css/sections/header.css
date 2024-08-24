@@ -19,19 +19,18 @@
 }
 
 .header__logo h4 {
-  color: #fff;
   padding-left: 30px;
   font-weight: 700;
   font-size: 24px;
-  font-family: var(--playfair-display);
   text-transform: uppercase;
-  opacity: 0.8;
+  font-family: var(--playfair-display);
+  color: #fff;
 }
 
 .header__menu,
 .header__menu-mobile {
   padding: 20px;
-  flex: 1.2;
+  flex: 1.236;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -40,11 +39,11 @@
 }
 
 .header__menu li {
-  font-size: 16px;
-  font-family: var(--plus-jakarta-sans);
   font-weight: 500;
-  text-transform: uppercase;
+  font-family: var(--plus-jakarta-sans);
   color: var(--secondary-color);
+  font-size: 16px;
+  text-transform: uppercase;
   line-height: 20px;
   cursor: pointer;
   transition: all 0.2s;
@@ -54,10 +53,19 @@
   }
 }
 
-.header__menu-mobile {
-  display: none;
+.header__menu li:active {
+  transform: scale(1);
+  font-weight: 500;
 }
 
-.header__menu-mobile img {
-  cursor: pointer;
+.header__menu li img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.header__menu-mobile {
+  display: none;
+  gap: 20px;
+  position: relative;
 }
